@@ -4,27 +4,51 @@ The goal of this project is to create a prediction model for cancer detection.
 As cancer is a very complicated condition due to its variability depending on the area affected, I decided to focus on a specific area of the body.
 I focused on lung cancer. For this I gathered data from National Lung Screening Test(NSLT), a test conducted on patients that had to be smokers in the previous 15 years.
 
-## Information 
-  The data was divided in multiple sections:
-### Data sets
-  There are 5 different data sets:  
-    >The first gives the personal information and summarize data of each patient;  
-    >The second has the information about the type of screening the patient received;  
-    >The third shows the results found from the screening type;  
-    >The fourth compares the results found in the previous data set to see abnormal growths;  
-    >The final data set has all the information about the cancer that the patient has.  
+## 📖 Table of Contents
+- [Project Information](#information)
+- [Merging Data Sets](#merging-data-sets)
+- [Jupyter Notebooks](#jupyter-notebooks)
+- [Datasets](#datasets)
+- [Future Steps](#future-steps)
 
-There are multiple columns that are shared between each data sets and that is what I used to merge them. 
-### Merging data sets
-Merging the data caused some complications.
-As the data sets were merge by using a specific column and I wanted to retain the information from both datasets, it created some duplication of the patients.
-This is due to the columns used went from one to many. There were several uses of the ID column in all the data sets except the first one where it gave the information of the patients. 
-This was a problem that I later realised was not so consequential, as one of the columns (size of the mass detected) was set to 0 for the patients with out cancer. 
-When doing the confussion matrix, the column for the size of mass detected was not a 1:1 indicator of cancer as some patients had masses that were not cancer. It was an indicator of no cancer if 0 was the value.
-This allowed me to train the model on only the patients with a mass detected which in turn made the model more accurate to determine which stage of cancer each patient was on. 
+---
 
-### Images
-  The NLST also has some images of the screenings that show the cancers and other growths.
-  The idea is to implement a neural network to process the images and gather the information directly from the images instead of the datasets.
+## 📝 Information 
+The data was divided into multiple sections:
 
-"# Final-Project-ID-Bootcamp" 
+### 📊 Data sets
+There are 5 different data sets:  
+- **[Screening Type](./nlst_780_screen_idc_20210527.csv)** – Information on the screening process used for each patient  
+- **[Screening Results](./nlst_780_ctab_idc_20210527.csv)** – What was found on the screenings carried on the patients  
+- **[Abnormal Growths](./nlst_780_ctabc_idc_20210527.csv)** – The abnomalities found in the screenings/details about it    
+- **[Personal Information](./nlst_780_prsn_idc_20210527.csv)** – Personal information of the patients   
+- **[Cancer Diagnosis](./nlst_780_canc_idc_20210527.csv)** – Details of the cancer types found in patients  
+
+There are multiple columns that are shared between each dataset, which were used to merge them.
+
+---
+
+## 🔀 Merging Data Sets
+Merging the data caused some complications.  
+Since the datasets were merged using a specific column and I wanted to retain information from both datasets, it created some duplication of patients.  
+However, one of the columns (`size of the mass detected`) was set to `0` for patients **without** cancer. This allowed to organize the patients who had a growth to be set apart and use the model only on them.
+This gives a more precise model to detect the stage at which the patients´ cancer is at.  
+
+---
+
+## 📂 Jupyter Notebooks
+The following notebooks contain different steps that I carried when making the process:
+
+- **[Preprocessing](./PreProcess.ipynb)** – Data cleaning and merging
+- **[Data Analysis](./Analisis.ipynb)** – Initial data exploration and visualization  
+- **[First Model Try](./First%20try.ipynb)** – First attempt at building a model  
+- **[Second Model Try](./Second%20try.ipynb)** – Improved version of the model  
+- **[XGBoost Testing](./XGboost%20test.ipynb)** – Testing XGBoost for cancer classification, best results  
+
+---
+
+## 🚀 Future Steps
+- Implement a **neural network** to analyze screening images.  
+- Use **deep learning** to extract cancer information directly from scans.  
+- Improve data preprocessing to handle missing values more efficiently. 
+
