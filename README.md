@@ -4,13 +4,6 @@ The goal of this project is to create a prediction model for cancer detection.
 As cancer is a very complicated condition due to its variability depending on the area affected, I decided to focus on a specific area of the body.
 I focused on lung cancer. For this I gathered data from National Lung Screening Test(NSLT), a test conducted on patients that had to be smokers in the previous 15 years.
 
-## 📖 Table of Contents
-- [Project Information](#information)
-- [Merging Data Sets](#merging-data-sets)
-- [Jupyter Notebooks](#jupyter-notebooks)
-- [Datasets](#datasets)
-- [Future Steps](#future-steps)
-
 ---
 
 ## 📝 Information 
