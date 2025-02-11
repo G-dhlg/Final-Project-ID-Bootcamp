@@ -8,11 +8,11 @@ I focused on lung cancer. For this I gathered data from National Lung Screening 
   The data was divided in multiple sections:
 ### Data sets
   There are 5 different data sets:  
-    The first gives the personal information and summarize data of each patient;  
-    The second has the information about the type of screening the patient received;  
-    The third shows the results found from the screening type;  
-    The fourth compares the results found in the previous data set to see abnormal growths;  
-    The final data set has all the information about the cancer that the patient has.  
+    ```The first gives the personal information and summarize data of each patient;  
+    ```The second has the information about the type of screening the patient received;  
+    ```The third shows the results found from the screening type;  
+    ```The fourth compares the results found in the previous data set to see abnormal growths;  
+    ```The final data set has all the information about the cancer that the patient has.  
 
 There are multiple columns that are shared between each data sets and that is what I used to merge them. 
 ### Merging data sets
