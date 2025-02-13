@@ -8,6 +8,7 @@ I focused on lung cancer. For this I gathered data from National Lung Screening 
 
 ## 📝 Information 
 The data was divided into multiple sections:
+Samples were prepare to be viewed in git hub
 
 ### 📊 Data sets
 There are 5 different data sets:  
