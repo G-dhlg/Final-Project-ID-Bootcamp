@@ -11,11 +11,11 @@ The data was divided into multiple sections:
 
 ### 📊 Data sets
 There are 5 different data sets:  
-- **[Screening Type](./nlst_780_screen_idc_20210527.csv)** – Information on the screening process used for each patient  
-- **[Screening Results](./nlst_780_ctab_idc_20210527.csv)** – What was found on the screenings carried on the patients  
-- **[Abnormal Growths](./nlst_780_ctabc_idc_20210527.csv)** – The abnomalities found in the screenings/details about it    
-- **[Personal Information](./nlst_780_prsn_idc_20210527.csv)** – Personal information of the patients   
-- **[Cancer Diagnosis](./package-nlst-780.2021-05-28/nlst_780/nlst780.idc.delivery.052821/nlst_780_canc_idc_20210527.csv/nlst_780_canc_idc_20210527.csv)** – Details of the cancer types found in patients  
+- **[Screening Type](./sample csv/nlst_780_screen_idc_sample.csv)** – Information on the screening process used for each patient  
+- **[Screening Results](./sample csv/nlst_780_ctab_idc_sample.csv)** – What was found on the screenings carried on the patients  
+- **[Abnormal Growths](./sample csv/nlst_780_ctabc_idc_sample.csv)** – The abnomalities found in the screenings/details about it    
+- **[Personal Information](./sample csv/nlst_780_prsn_idc_sample.csv)** – Personal information of the patients   
+- **[Cancer Diagnosis](./sample csv/nlst_780_canc_sample.csv)** – Details of the cancer types found in patients  
 
 There are multiple columns that are shared between each dataset, which were used to merge them.
 
