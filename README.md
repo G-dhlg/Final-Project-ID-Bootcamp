@@ -44,6 +44,8 @@ The following notebooks contain different steps that I carried when making the p
 ## ✅ Results
 The best results were achieved with XGboost and a train test split score of 0.9389. The data acquired was not big enough to get a model to produce a precise enough result.
 
+---
+
 ## 🚀 Future Steps
 - Implement a **neural network** to analyze screening images.  
 - Use **deep learning** to extract cancer information directly from scans.  
